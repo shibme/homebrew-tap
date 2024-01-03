@@ -5,21 +5,21 @@
 class Xipher < Formula
   desc "Xipher is a curated collection of cryptographic primitives written in Go to encrypt and decrypt data with optional compression."
   homepage "https://dev.shib.me/xipher"
-  version "0.4.2"
+  version "0.4.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shibme/xipher/releases/download/v0.4.2/xipher_0.4.2_darwin_amd64.zip"
-      sha256 "3163d96f9a354ba0d67c75db830816073612bc3d51d64731ae8ba4e179264909"
+      url "https://github.com/shibme/xipher/releases/download/v0.4.3/xipher_0.4.3_darwin_amd64.zip"
+      sha256 "d46800d24180674f017d3d34da64660125f12a3947cc99438b483486251bf21d"
 
       def install
         bin.install "xipher"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shibme/xipher/releases/download/v0.4.2/xipher_0.4.2_darwin_arm64.zip"
-      sha256 "49f69ac85f111c9506459ab7dffaf4bd6f8ebd838e330e8b242a47c82ddf28fe"
+      url "https://github.com/shibme/xipher/releases/download/v0.4.3/xipher_0.4.3_darwin_arm64.zip"
+      sha256 "a10b5f003accf74d1bab53f0d7f3554e1e64f6f72758fd7c80a1d86ecb70e3f3"
 
       def install
         bin.install "xipher"
@@ -29,16 +29,16 @@ class Xipher < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shibme/xipher/releases/download/v0.4.2/xipher_0.4.2_linux_arm64.zip"
-      sha256 "bcb4347c94681aa02c9b78e2140c452c6dbe941ea4b0f2ce7532763834a0e56f"
+      url "https://github.com/shibme/xipher/releases/download/v0.4.3/xipher_0.4.3_linux_arm64.zip"
+      sha256 "dfbb33a42802b3b7e0f6f42ac3e487bd282436d654910ba37b5cc80dc48129f3"
 
       def install
         bin.install "xipher"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/shibme/xipher/releases/download/v0.4.2/xipher_0.4.2_linux_amd64.zip"
-      sha256 "f3313a971f74b059e24b0f86f6ae5903aa2018225881f97cf90f927721c91d9a"
+      url "https://github.com/shibme/xipher/releases/download/v0.4.3/xipher_0.4.3_linux_amd64.zip"
+      sha256 "0c122a3900752e7aed7d326522fb06eb3a2d7a715971a35bd41a362cdb6e3f6c"
 
       def install
         bin.install "xipher"
