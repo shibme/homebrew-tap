@@ -5,21 +5,21 @@
 class Xipher < Formula
   desc "Xipher is a curated collection of cryptographic primitives put together to perform password-based asymmetric encryption. It is written in Go and can be used as a library or a CLI tool."
   homepage "https://dev.shib.me/xipher"
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/shibme/xipher/releases/download/v0.8.0/xipher_0.8.0_darwin_arm64.zip"
-      sha256 "bf4119e56cdf13b53a492f195bf67021b8db6847638ed48832edb38a27d9f64a"
+      url "https://github.com/shibme/xipher/releases/download/v0.8.1/xipher_0.8.1_darwin_arm64.zip"
+      sha256 "08a71791f3d1f76dc1d88e0c262e724226888c807a881c546df08ca6cc2ec081"
 
       def install
         bin.install "xipher"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/shibme/xipher/releases/download/v0.8.0/xipher_0.8.0_darwin_amd64.zip"
-      sha256 "0ac583d3ff5eaa426c9636049687f25b48759e9182c918b0ce542bffa6aeff04"
+      url "https://github.com/shibme/xipher/releases/download/v0.8.1/xipher_0.8.1_darwin_amd64.zip"
+      sha256 "8deaa0ebab6ab1a2c63ad97234be3476b6e95904209b1f167e4511c1f980a8eb"
 
       def install
         bin.install "xipher"
@@ -29,16 +29,16 @@ class Xipher < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shibme/xipher/releases/download/v0.8.0/xipher_0.8.0_linux_arm64.zip"
-      sha256 "cf0da1a539b0ec881f5bdcb664f96265c31e29eb184b8198f6729a4cf0306c6c"
+      url "https://github.com/shibme/xipher/releases/download/v0.8.1/xipher_0.8.1_linux_arm64.zip"
+      sha256 "9fb52f871c38d9d5f0a5b163b525293fd413cd4aaff1698f3a5a96e28da6b8d4"
 
       def install
         bin.install "xipher"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/shibme/xipher/releases/download/v0.8.0/xipher_0.8.0_linux_amd64.zip"
-      sha256 "2d6e0f43eb5c9280a0eed1b650f9722761b232656520178abbc8beabcddbf74b"
+      url "https://github.com/shibme/xipher/releases/download/v0.8.1/xipher_0.8.1_linux_amd64.zip"
+      sha256 "791640dfc449d9cefc142c11580eff7802e5263cdda7c6e40dae42b4bf6058bc"
 
       def install
         bin.install "xipher"
