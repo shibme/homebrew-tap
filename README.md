@@ -1,6 +1,6 @@
-Homebrew Beta
+Homebrew Tap
 =====================
-This is a [Homebrew][brew] tap for beta software maintained by [Shibly Meeran][shibme].
+This is a [Homebrew][brew] tap for software maintained by [Shibly Meeran][shibme].
 
 Setup
 -----
@@ -8,7 +8,7 @@ Using these formulae requires [Homebrew][brew] to be installed.
 
 Once homebrew is installed, simply run:
 ```
-brew tap shibme/beta
+brew tap shibme/tap
 ```
 
 Use
@@ -20,7 +20,7 @@ brew install xipher
 ```
 or to install [xipher][xipher] directly without setting tap, run:
 ```
-brew install shibme/beta/xipher
+brew install shibme/tap/xipher
 ```
 
 [brew]: http://brew.sh
