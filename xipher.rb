@@ -5,21 +5,21 @@
 class Xipher < Formula
   desc "Xipher is a curated collection of cryptographic primitives put together to perform key/password based asymmetric encryption."
   homepage "https://dev.shib.me/xipher"
-  version "1.3.3"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/shibme/xipher/releases/download/v1.3.3/xipher_darwin_amd64.zip"
-      sha256 "a7b6bec806f2bbe918bc19410b02f81d60518cd4a76fe15a833a228088fdb38e"
+      url "https://github.com/shibme/xipher/releases/download/v1.4.0/xipher_darwin_amd64.zip"
+      sha256 "6d3f8aea77d3173b00d8eeeca08a0735ae02e73f235888110cffbdda923d56f5"
 
       def install
         bin.install "xipher"
       end
     end
     on_arm do
-      url "https://github.com/shibme/xipher/releases/download/v1.3.3/xipher_darwin_arm64.zip"
-      sha256 "b6c26689941c7726a396c7dcd6178a8324e84e760508a5597e2191851c5ea669"
+      url "https://github.com/shibme/xipher/releases/download/v1.4.0/xipher_darwin_arm64.zip"
+      sha256 "8b66336f30ee55a022264c46d71da8dc47101de3844b778291e1119e9308ccee"
 
       def install
         bin.install "xipher"
@@ -30,8 +30,8 @@ class Xipher < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/shibme/xipher/releases/download/v1.3.3/xipher_linux_amd64.zip"
-        sha256 "509b047c2a6f9715f2b270286408be616aad9633dd8351f8cb33432662e47bdd"
+        url "https://github.com/shibme/xipher/releases/download/v1.4.0/xipher_linux_amd64.zip"
+        sha256 "f3120c50705e709c9e3f07132b001e2f3dab4525b47dc13d9346e28c92703304"
 
         def install
           bin.install "xipher"
@@ -40,8 +40,8 @@ class Xipher < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/shibme/xipher/releases/download/v1.3.3/xipher_linux_arm.zip"
-        sha256 "d2994dd6ea6e7df84983fc1ef9c6ec42e014ced4386b31ffd9134e05cbb4a32c"
+        url "https://github.com/shibme/xipher/releases/download/v1.4.0/xipher_linux_arm.zip"
+        sha256 "d9ddce4d67a7a2df95b80d34383d0212a92c34e6d3dc96ad8232b9e57ae0bf02"
 
         def install
           bin.install "xipher"
@@ -50,8 +50,8 @@ class Xipher < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/shibme/xipher/releases/download/v1.3.3/xipher_linux_arm64.zip"
-        sha256 "6d9c08d34aca85f4153771ccd46a508ba525ac7fd2fd2731169e82ae823afdb5"
+        url "https://github.com/shibme/xipher/releases/download/v1.4.0/xipher_linux_arm64.zip"
+        sha256 "a06b1e18414b1221a2fbf8e50edf07acd40a95b00bad093717d0981dbde90d4a"
 
         def install
           bin.install "xipher"
