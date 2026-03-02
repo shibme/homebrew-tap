@@ -20,7 +20,7 @@ brew install xipher
 ```
 or to install [xipher][xipher] directly without setting tap, run:
 ```
-brew install shibme/tap/xipher
+brew install --cask shibme/tap/xipher
 ```
 
 [brew]: http://brew.sh
